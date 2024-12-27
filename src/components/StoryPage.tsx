@@ -63,7 +63,7 @@ export function StoryPage({
             {previousStory && (
               <Button
                 variant="outline"
-                className="bg-black text-white text-lg hover:bg-gray-800 hover:text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 dark:hover:text-black transition-colors"
+                className="py-6 px-6 bg-black text-white text-lg font-semibold hover:bg-gray-800 hover:text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 dark:hover:text-black transition-colors"
                 asChild
               >
                 <Link href={previousStory.href} className="flex items-center">
@@ -75,7 +75,7 @@ export function StoryPage({
             {nextStory && (
               <Button
                 variant="outline"
-                className="ml-auto bg-black text-white text-lg hover:bg-gray-800 hover:text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 dark:hover:text-black transition-colors"
+                className="py-6 px-6 bg-black text-white text-lg font-semibold hover:bg-gray-800 hover:text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 dark:hover:text-black transition-colors"
                 asChild
               >
                 <Link href={nextStory.href} className="flex items-center">
@@ -89,14 +89,13 @@ export function StoryPage({
       </main>
       {showGoToTop && (
         <Button
-          style={{ bottom: '6.5rem', right: '1.5rem' }}
+          style={{ bottom: '15.5rem', right: '1rem' }}
           variant="outline"
-          className="fixed bg-black text-white hover:bg-gray-800 hover:text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 dark:hover:text-black transition-colors rounded-full p-4"
+          className="h-10 w-10 fixed bg-black text-white hover:bg-gray-800 hover:text-white dark:bg-white dark:text-black dark:hover:bg-gray-200 dark:hover:text-black transition-colors rounded-full p-4"
           onClick={scrollToTop}
           aria-label="Go to top"
         >
-          <ChevronUp className="h-6 w-6" />
-          Back to Top
+          <ChevronUp />
         </Button>
       )}
     </div>
